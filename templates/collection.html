@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Collection</title>
+    {% load static %}
+     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <script src ="{% static 'js/bootstrap.min.js' %}"> </script>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    
+
+    <style>
+        img{
+            width: 300px;
+            height: 200px;
+        }
+        h1{
+            background-color: red;
+            line-height: 100px;
+            color: white;
+            font-size: 40px;
+            text-align: center;
+        }
+        h1:hover{
+            background-color: dodgerblue;
+        }
+    </style>
+</head>
+<body>
+<h1>MY COLLECTION</h1>
+
+<button ><a class="btn btn-outline-success" href="{% url 'about' %}">about</a></button>
+<button ><a class="btn btn-outline-danger" href="{% url 'form' %}">Form</a></button>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias corporis cum deleniti, doloremque eligendi esse harum, itaque labore modi nam natus officiis praesentium quos saepe sunt ut veniam veritatis vitae?</p>
+<img src="{% static 'images/911 gt3rs.jpeg' %}" alt="">
+<img src="{% static 'images/918.jpeg' %}" alt="">
+<img src="{% static 'images/amggt.jpeg' %}" alt="">
+<img src="{% static 'images/veneno.jpeg' %}" alt="">
+<img src="{% static 'images/venti.jpeg' %}" alt="">
+<img src="{% static 'images/laf.jpeg' %}" alt="">
+<img src="{% static 'images/huracan.jpeg' %}" alt="">
+
+<h1>Payment</h1>
+<p class="paragraph2"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis commodi dignissimos enim facilis in quos saepe. Animi, asperiores ipsam laborum nostrum, numquam obcaecati quaerat recusandae rem repellendus totam, voluptate voluptatibus!</span><span>Accusamus accusantium assumenda at deleniti est fugit harum, id ipsum magnam maxime molestiae natus numquam optio quam quibusdam, tenetur unde, velit voluptatibus. Blanditiis consequuntur dolorem nemo, quod sint tempora ut!</span></p>
+
+<img id="image" src="{% static 'images/m5.jpeg' %}" alt="">
+
+</body>
+</html>
